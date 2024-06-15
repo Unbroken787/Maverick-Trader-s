@@ -1,0 +1,417 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px 20px 10px 20px;
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 5;
+}
+
+.navbar-container i{
+    font-size: 25px; 
+    color: white;
+}
+
+.navbar-container img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.menu-open{
+    position: fixed;
+    z-index: 6;
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    width: 50%;
+    top: 0;
+    left: -50%;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    transition: 1s;
+}
+
+.menu-close{
+    text-align: right;
+}
+
+.menu-close i{
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;  
+    margin-right: 15px; 
+    font-weight: bolder;
+}
+
+.menu-open a{
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-left: 15px;
+    border-bottom: solid;
+    outline: none;
+    background: transparent;
+    background-color: transparent;
+    font-weight: bolder;
+}
+
+.section1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.section1 p{
+    margin-top: 5px;
+}
+
+.section2 img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.section2 h2{
+    margin: 10px 10px 0 20px;
+}
+
+.section2 p{
+    margin: 15px 10px 0 20px;
+}
+
+.section2 a{
+    color: blue;
+}
+
+.lecture-description{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lecture-description p{
+    flex-grow: 1;
+    color: grey;
+}
+
+.whatsapp-btn-container{
+    position: fixed;
+    right: 45px;
+    bottom: 25px;
+}
+
+.whatsapp-btn-container .whatsapp-btn{
+    font-size: 48px;
+    color: #25d366;
+}
+
+.navtabs {
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+}
+
+.navtab {
+  margin: 0 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black;
+  transition: color 0.3s;
+}
+
+.navtab:hover {
+  color: #FA5F55;
+}
+
+.navtab.active {
+  color: #FA5F55;
+  font-weight: 600;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background: #FA5F55;
+  transition: left 0.3s ease, width 0.3s ease;
+}
+
+.content {
+  display: none;
+  padding: 20px 20px 20px;
+  max-width: 800px;
+}
+
+.content p{
+    margin-top: 10px;
+}
+
+.aboutlist{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.aboutlist li{
+    margin-top: 15px;
+}
+
+.content a{
+    color: blue;
+}
+
+.instructorlist{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.instructorlist p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content.active {
+  display: block;
+}
+
+.accordion {
+  background-color: #eee;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+
+.active2, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after{
+    content: '\02795';
+    color: black;
+    float: right; 
+    font-weight: bold;
+    margin-top: -14px;
+    font-size: 10px;   
+}
+
+.active2:after{
+    content: "\2796";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.paneltopic{
+   margin-top: 15px;
+   margin-bottom: 15px;
+   font-size: 14px;
+}
+
+.paneltopic i{
+    color: teal;
+}
+
+.span1{
+    margin-left: 20px;
+}
+
+.cc{
+   margin-top: 15px; 
+   margin-bottom: 10px;
+}
+
+.basicprice{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.basicprice p{
+    margin-right: 45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.basicprice del{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.basicprice a{
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: teal;
+}
+
+.refund-container{
+    margin: 5px 20px 15px 20px;
+}
+
+.refund-container p{
+    margin-top: 10px;
+}
+
+.span2{
+    color: teal;
+    font-weight: bold;
+}
+
+.refund-container a{
+    color: blue;
+}
+
+.instructor{
+    margin: 5px 20px 0 20px;
+}
+
+.instructor h3{
+    margin-top: 15px;
+    color: teal;
+}
+
+.authorabout{
+    color: grey;
+}
+
+.instructorimage{
+    text-align: center;
+}
+
+.instructor img{
+    margin-top: 20px;
+    height: 125px;
+    width: 125px;
+    border: solid 2px teal;
+    border-radius: 62.5px;
+}
+
+.authordescription{
+    margin-top: 10px;
+}
+
+.consultation{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.consultheading{
+    text-align: center;
+}
+
+.consultheading h4{
+    margin-top: 20px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.consultheading p{
+    margin-top: 15px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.consultheading button{
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+    width: 90%;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    border: outset 2px teal;
+    background: teal;
+    background-color: teal;
+    color: white;
+}
+
+.consultheading a{
+    text-decoration: none;
+    color: white;
+}
+
+.consultheading i{
+    margin-left: 5px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footersec1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.footersec2{
+    margin-bottom: 20px;
+}
+
+.footersec2 i{
+    margin-right: 10px;
+}
+
+.footersec2 p{
+    margin-top: 15px;
+    font-size: 14px;
+    color: grey;
+}
+
+.footersec1 img{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.footerp{
+    margin-top: 20px;
+}
+
+.social-media{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.social-media a{
+    color: white;
+}
+
+.address{
+    color: grey;
+}
